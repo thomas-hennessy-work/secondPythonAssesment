@@ -296,4 +296,15 @@ def ten(X,Y):
 
 	returnList = []
 
-	return []
+	count = 0
+
+	while count < Y:
+		toAddList = []
+		toAddCount = 0
+		while toAddCount < X:
+			toAddList.append(count*toAddCount)
+			toAddCount += 1
+		returnList.append(toAddList)
+		count += 1
+
+	return returnList
