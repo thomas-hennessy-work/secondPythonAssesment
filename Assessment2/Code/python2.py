@@ -122,7 +122,16 @@ def three(a):
 	# How would you seperate a string into characters?
 
 def four(input1, input2):
-	return ""
+
+	count = 0
+	returnStr = ""
+
+	while count < len(input1):
+		returnStr += input1[count:count+1]
+		returnStr += input2[count:count+1]
+		count += 1
+
+	return returnStr
 
 	# <QUESTION 5>
 
