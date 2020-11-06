@@ -258,7 +258,24 @@ def eight(input,  a):
 	# There are no hints for this question.
 
 def nine(string1, string2):
-    return False
+
+	if len(string1) <= len(string2):
+		longStr = string2
+		shortStr = string1
+	else:
+		longStr = string1
+		shortStr = string2
+
+	count = 0
+
+	while count < len(shortStr):
+		if shortStr[count] in longStr:
+			longStr.replace(shortStr[count], "")
+		else:
+			return False
+		count += 1
+			
+	return True
 
 	# <QUESTION 10>
 
