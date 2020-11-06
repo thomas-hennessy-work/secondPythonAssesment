@@ -167,6 +167,11 @@ def five():
 	# There are no hints for this question.
     
 def six(input):
+	inputLength = len(input)
+
+	if input[inputLength-2:inputLength].lower() == "py":
+		return True
+
 	return False
 
 	# <QUESTION 7>
