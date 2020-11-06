@@ -30,7 +30,15 @@
 	# How does a for loop iterate through a string?
 
 def one(input):
-	return ""
+	returnStr = ""
+
+	for letter in input:
+		count = 0
+		while count < 3:
+			returnStr += letter
+			count += 1
+
+	return returnStr
 
 	# <QUESTION 2>
 
