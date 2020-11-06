@@ -148,7 +148,19 @@ def four(input1, input2):
 	# The random module contains a function called randint.
 
 def five():
-    return []
+	from random import randint
+
+	returnList = []
+
+	count = 0
+
+	while count < 5:
+		randNum = randint(100, 200)
+		if randNum%2 == 0:
+			returnList.append(randNum)
+			count += 1
+
+	return returnList
 
 	# <QUESTION 6>
 
@@ -264,4 +276,7 @@ def nine(string1, string2):
 	# Think about nesting for loops.
 
 def ten(X,Y):
+
+	returnList = []
+
 	return []
