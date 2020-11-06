@@ -56,7 +56,14 @@ def one(input):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(range).
 
 def two(input):
-    return False
+	count = 2
+
+	while count < input:
+		if input%count == 0:
+			return False
+		count += 1
+			
+	return True
 
 	# <QUESTION 3>
 
