@@ -196,7 +196,17 @@ def six(input):
 	# Use the cli to access the documentation help(list.sort)
 
 def seven(a, b, c):
-	return False
+
+	sortedList = [a,b,c]
+	sortedList.sort()
+
+	firstSpace = sortedList[0] - sortedList[1]
+	secondSpace = sortedList[1] - sortedList[2]
+
+	if firstSpace == secondSpace:
+		return True
+	else:
+		return False
 
 	# <QUESTION 8>
 
