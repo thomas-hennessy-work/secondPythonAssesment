@@ -224,7 +224,12 @@ def seven(a, b, c):
     # Use the cli to access the documentation help(str.replace)
 
 def eight(input,  a):
-	return ""
+
+	spacing = (len(input) - a) /2
+
+	returnstr = input[0:int(spacing)] + input[len(input)-int(spacing):len(input)]
+
+	return returnstr
 
 	# <QUESTION 9>
 
