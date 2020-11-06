@@ -80,7 +80,20 @@ def two(input):
 	# What happens if you multiply a string by a number?
 
 def three(a):
-	return 1
+
+	count = 1
+	returnNum = 0
+
+	while count < 5:
+		partCounter = 0
+		partNum = ""
+		while partCounter < count:
+			partNum += str(a)
+			partCounter += 1
+		count += 1
+		returnNum += int(partNum)
+
+	return returnNum
 
 	# <QUESTION 4>
 
